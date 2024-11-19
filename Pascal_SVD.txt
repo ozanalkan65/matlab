@@ -1,0 +1,10 @@
+A = pascal(8);
+[U,S,V] = svd(A);
+An = U(:,1:5)*S(1:5,1:5)*V(:,1:5)';
+norm(A-An)
+
+ans =
+
+    0.0837
+
+diary off;

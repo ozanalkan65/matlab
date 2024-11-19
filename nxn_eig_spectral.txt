@@ -1,0 +1,21 @@
+for i= 1:12
+for j= 1:12
+if i==j
+A(i,j)=2*i;
+else if i<j
+A(i,j)=(-2)/j;
+else if i>j
+A(i,j)=2/j;
+end
+end
+end
+end
+end
+Aval= eigs(A);
+max(abs(Aval))
+
+ans =
+
+   23.9216
+
+diary off;

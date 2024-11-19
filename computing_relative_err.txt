@@ -1,0 +1,12 @@
+x = zeros(40,1);
+x(1) = 2;
+for n=2:40
+x(n)=2.^(n-1/2).*sqrt(1-sqrt(1-4.^(1-n).*x(n-1).^2));
+end
+min(abs(x-pi))/pi
+
+ans =
+
+   3.8764e-10
+
+diary off;

@@ -1,0 +1,12 @@
+A = hilb(12);
+for i = 1:8
+[Q,R] = qr(A);
+A = R*Q;
+end
+A(3,3)
+
+ans =
+
+    0.0447
+
+diary off;

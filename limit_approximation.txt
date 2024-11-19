@@ -1,0 +1,18 @@
+errmin = 10;
+i=0;
+for n=1:14
+h=10^(-n);
+y=(1-cos(h))/(h^2);
+err=abs(y-(1/2))/(1/2);
+if err<errmin
+errmin=err;
+i=n;
+end
+end
+i
+
+i =
+
+     4
+
+diary off;

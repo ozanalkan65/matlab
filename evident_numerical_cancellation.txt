@@ -1,0 +1,22 @@
+
+x1 = 1.7;
+d1 = 2.1*10^-9;
+y1 = sqrt(x1+d1)-sqrt(x1);
+y1_=d1/(sqrt(x1+d1)+sqrt(x1));
+err1 = abs(y1-y1_)/abs(y1_)
+
+err1 =
+
+   1.0995e-07
+
+x2 = 31000;
+d2 = 7.1*10^-4;
+y2 = sqrt(x2+d2)-sqrt(x2);
+y2_ = d2/(sqrt(x2+d2)+sqrt(x2));
+err2 = abs(y2-y2_)/abs(y2_)
+
+err2 =
+
+   5.6193e-09
+
+diary off;
